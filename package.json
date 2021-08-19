@@ -1,0 +1,24 @@
+{
+  "name": "project-lambda",
+  "version": "1.0.0",
+  "description": "only for us",
+  "main": "main.js",
+  "dependencies": {
+    "electron": "^13.2.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "start":"electron .",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/GSHS38/Project-Lambda.git"
+  },
+  "author": "Juntae",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/GSHS38/Project-Lambda/issues"
+  },
+  "homepage": "https://github.com/GSHS38/Project-Lambda#readme"
+}
