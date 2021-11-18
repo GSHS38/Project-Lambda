@@ -4,7 +4,7 @@ function createWindow(){
     const win = new BrowserWindow({
         width:1000,height:800
     });
-    win.loadFile('index.html');
+    win.loadFile('docs/index.html');
 }
 app.whenReady().then(()=>{
     createWindow();

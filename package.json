@@ -6,10 +6,11 @@
   "dependencies": {
     "electron": "^13.2.1"
   },
-  "devDependencies": {},
+  "devDependencies": {
+    "electron": "^13.2.1"
+  },
   "scripts": {
-    "start":"electron .",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "electron ."
   },
   "repository": {
     "type": "git",
