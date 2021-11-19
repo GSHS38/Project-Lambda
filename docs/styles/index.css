@@ -1,0 +1,63 @@
+body{
+    text-align:center;
+    background:radial-gradient(circle at top, #f08155,#aab4ee);
+}
+#containerIndex{
+    position:absolute;
+    bottom:30px;
+    display:flex;
+    justify-content: center;
+    width:100%;
+    flex-wrap:wrap;
+    flex-direction: row;
+    
+}
+
+#logo{
+    position:fixed;
+    top:30px;
+    left:50%;
+    margin-left:-100px;
+    width:200px;
+    height:200px;
+    animation-name:logoLoop;
+    animation-iteration-count: infinite;
+    animation-duration:5s;
+}
+@keyframes logoLoop{
+    from {
+        filter:hue-rotate(0deg);
+    }
+    to {
+        filter:hue-rotate(360deg);
+    }
+}
+
+a.menuBtn{
+    display:block;
+    position:relative;
+
+    font-size:30px;
+    background-color: white;
+    background-size:cover;
+    background-position:center;
+
+    height:200px;
+    width:200px;
+    border:none;
+
+    box-shadow:0 0 2px 1px #ace6ff;
+    transition:background-color 0.3s, box-shadow 0.3s;
+    margin:0px 10px;
+}
+a.menuBtn > p{
+    position:absolute;
+    width:100%;
+    bottom:10px;
+    margin:0;
+    text-align:center;
+}
+a.menuBtn:hover{
+    background-color:#daf6ff;
+    box-shadow:2px 2px 3px 3px #6b71d3;
+}

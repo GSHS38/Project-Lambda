@@ -5,16 +5,23 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Notepad</title>
-    <link rel="stylesheet" href="style/essential.css">
-    <link rel="stylesheet" href="style/notepad.css">
+    <link rel="stylesheet" href="styles/essential.css">
+    <link rel="stylesheet" href="styles/notepad.css">
+    <link rel="shortcut icon" href="image/notepad.png">
 </head>
 <body>
     <div id="container">
         <div id="menuBar">
             <a href="index.html" class="navBtn" style="display:block;width:120px;height:40px;"></a>
         </div>
-        
-        <textarea autofocus></textarea>
+        <div id="content">
+            <textarea autofocus></textarea>
+        </div>
     </div>
+    <div id="savedContainer">
+        <div id="saved" class="saving">saved!</div>
+    </div>
+    
+    <script src="script/notepad.js"></script>
 </body>
 </html>
