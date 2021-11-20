@@ -16,7 +16,7 @@ async function createWindow(){
     });
 
 
-    win.loadFile(path.join(__dirname,'docs/index.html'));
+    win.loadFile(path.join(__dirname,'docs/html/index.html'));
 
     win.on('ready-to-show',()=>{
         win.show();
