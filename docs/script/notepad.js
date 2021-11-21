@@ -1,5 +1,6 @@
 const textArea = document.querySelector('textarea');
-const savedPopup = document.querySelector('#saved');
+const savedPopup = document.getElementById('#saved');
+const nameInput = document.getElementById('#nameInput');
 
 console.log("hello! I am notepad!");
 window.api.send("openNotepad");
