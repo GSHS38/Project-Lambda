@@ -53,11 +53,13 @@ ipcMain.on('openNotepad',(event,args)=>{
 });
 
 ipcMain.on('saveNotepad',(event,data)=>{
-    fs.stat(path.join(__dirname,"/data"),(err,stat)=>{
+    if(!fs.existsSync(path.join(__dirname,"/data"))){
+        let err= fs.mkdirSync(path.join(__dirname,"/data"));
         if(err){
-            fs.mkdir(path.join(__dirname,"/data"),(err)=>{});
+            win.webContents.send("errsaveNotepad");
+            return;
         }
-    });
+    }
 
     fs.writeFile(path.join(__dirname,"/data/notepad_data"),data,(err)=>{
         if(err){
